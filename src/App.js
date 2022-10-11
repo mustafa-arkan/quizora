@@ -3,6 +3,7 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import CardDetails from './components/CardDetails/CardDetails';
 import Home from './Home/Home';
 import Main from './layout/Main';
 
@@ -16,7 +17,19 @@ const router=createBrowserRouter([
 children:[
 
 
-  {path:'/', element:<Home>this is default page</Home> },
+  {path:'/',
+  
+  
+  loader:async()=>{
+
+    return fetch('https://openapi.programming-hero.com/api/quiz')
+    
+    
+      },
+  
+  
+  
+  element:<Home></Home> },
 
 
 
@@ -41,7 +54,32 @@ children:[
 
   {path:'/topics', element: <div>Topics page</div>},
   {path:'/statics', element: <div>statics page</div>},
-  {path:'/blog', element: <div>blog page</div>}
+  {path:'/blog', element: <div>blog page</div>},
+
+
+
+  {
+
+
+    path:'/home/:homeId',
+    
+    
+    loader: async({params})=>{
+    
+    // console.log(params.friendId)
+    
+    return fetch(`https://openapi.programming-hero.com/api/quiz/${params.homeId} `)
+    
+    },
+    
+    element:<CardDetails></CardDetails>
+    
+    }
+
+
+
+
+
   
 ]
 

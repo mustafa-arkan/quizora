@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
 
 const Homecard = ({home}) => {
 
-const {name,logo,total}=home
+const {id,name,logo,total}=home
 
     return (
 
@@ -21,7 +22,11 @@ const {name,logo,total}=home
       <div className="card-body ">
         <h5 className="card-title">{name}</h5>
         <p>Total quiz:{total}</p>
-        <button type="button" class="btn text-dark bg-warning btn-outline-warning">Start Quiz</button>
+
+{/* <h2><Link to={`/home/${id}`}>Start Quiz</Link></h2> */}
+
+
+        <button type="button" className="btn text-dark bg-warning btn-outline-warning"><Link to={`/home/${id}`}>Start Quiz</Link></button>
         
       </div>
     </div>

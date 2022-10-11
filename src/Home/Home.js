@@ -5,6 +5,8 @@ import Homecard from '../components/Homecard/Homecard';
 
 
 
+
+
 const Home = () => {
 
 const homes=useLoaderData().data
@@ -12,7 +14,9 @@ const homes=useLoaderData().data
 
 
     return (
+        
         <div>
+           
            <h2>I have home: {homes.length}</h2>
 
 {
