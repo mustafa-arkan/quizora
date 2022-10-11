@@ -2,42 +2,33 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Questions from '../Questions/Questions';
 
-
-
 const CardDetails = () => {
-
-// const home=useLoaderData().data
-//console.log(home)
-
-
 const questions=useLoaderData().data.questions
+
+
+
+
+//console.log(questions)
+
 return (
-<div>
-           
-{/* <h2>length:{home.questions.length}</h2>
-<h2>Quiz of {home.name}</h2>
-<h2>Question:{home.questions[0].question} </h2> */}
+<div> 
 
 <h2>I have question: {questions.length}</h2>
 
+
+
 {
-
 questions.map(singlequestion=><Questions
-
-    key={singlequestion.id}
-
+key={singlequestion.id}
 singlequestion={singlequestion}
+
 
 ></Questions>)
 
+
 }
 
-
-
-
-
-
-        </div>
+      </div>
     );
 };
 
