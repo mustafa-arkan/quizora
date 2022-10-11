@@ -27,16 +27,14 @@ key={home.id}
 
 home={home}
 
-
-
-
 ></Homecard>)
 
-
-
-
-
 }
+
+
+
+
+
 
 
 
