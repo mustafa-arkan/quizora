@@ -1,0 +1,46 @@
+import React from 'react';
+
+
+
+
+const Homecard = ({home}) => {
+
+const {name,logo,total}=home
+
+    return (
+
+        <div className=' container card-group  '>
+
+
+<div className="card   mb-3 col-md-3 bg-success p-2 text-dark bg-opacity-50 d-flex flex-row  container ">
+  <div className="row g-0 ">
+    <div className="col-md-6">
+      <img src={logo} className="img-fluid rounded-start" alt="..."/>
+    </div>
+    <div className="col-md-4">
+      <div className="card-body ">
+        <h5 className="card-title">{name}</h5>
+        <p>Total quiz:{total}</p>
+        <button type="button" class="btn text-dark bg-warning btn-outline-warning">Start Quiz</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+            
+        </div>
+    );
+};
+
+export default Homecard;

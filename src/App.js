@@ -17,19 +17,33 @@ children:[
 
 
   {path:'/', element:<Home>this is default page</Home> },
-  {path:'/home', element:<Home>This is home page</Home> },
+
+
+
+
+  {path:'/home',
+  
+  loader:async()=>{
+
+    return fetch('https://openapi.programming-hero.com/api/quiz')
+    
+    
+      },
+  
+  
+  
+  
+  
+  element:<Home></Home> },
+
+
+
+
   {path:'/topics', element: <div>Topics page</div>},
   {path:'/statics', element: <div>statics page</div>},
   {path:'/blog', element: <div>blog page</div>}
   
 ]
-
-
-
-
-
-
-
 
 },
 

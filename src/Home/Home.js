@@ -1,11 +1,43 @@
 import React from 'react';
-import Header from '../components/Header/Header';
+import { useLoaderData } from 'react-router-dom';
+import Homecard from '../components/Homecard/Homecard';
+
+
 
 
 const Home = () => {
+
+const homes=useLoaderData().data
+
+
+
     return (
         <div>
-           <Header></Header>
+           <h2>I have home: {homes.length}</h2>
+
+{
+
+homes.map(home=><Homecard
+
+key={home.id}
+
+home={home}
+
+
+
+
+></Homecard>)
+
+
+
+
+
+}
+
+
+
+
+
         </div>
     );
 };
