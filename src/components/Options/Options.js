@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Opt from '../Opt/Opt';
 
@@ -19,6 +20,7 @@ const Options = ({opt}) => {
 
 
             <p>Questions:{opt.question}</p>
+            
             <div className='d-flex col-6'>
 
 {
@@ -43,7 +45,7 @@ abc.map(opp=><Opt key={opt.id} opp={opp}>
 
             </div>
            
-
+            <p>Correct Answer:{opt.correctAnswer}</p>
 
         </div>
     );

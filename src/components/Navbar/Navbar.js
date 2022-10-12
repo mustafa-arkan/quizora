@@ -12,7 +12,7 @@ const Navbar = () => {
 
 <nav className="navbar navbar-expand-lg bg-light container sticky-top col-12">
   <div className="container-fluid">
-  <h3>Quizzoraa</h3>
+  <h3><span className='text-danger'>Q</span>uizzoraa</h3>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
