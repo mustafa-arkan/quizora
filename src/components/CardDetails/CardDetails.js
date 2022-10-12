@@ -13,7 +13,7 @@ const questions=useLoaderData().data.questions
 return (
 <div> 
 
-<h2>I have question: {questions.length}</h2>
+<h2>Quiz of : {questions.length}</h2>
 
 
 

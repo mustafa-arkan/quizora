@@ -1,5 +1,5 @@
 import React from 'react';
-//import { useLoaderData } from 'react-router-dom';
+
 
 
 const Options = ({opt}) => {
@@ -14,10 +14,10 @@ const Options = ({opt}) => {
 
 
 
-        <div>
+        <div className=''>
 
 
-            <p>Options:{options}</p>
+            <p>Options:{options[0]}</p>
            
 
 
