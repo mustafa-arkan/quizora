@@ -3,6 +3,7 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blog from './components/Blogs/Blog';
 import CardDetails from './components/CardDetails/CardDetails';
 import Home from './Home/Home';
 import Main from './layout/Main';
@@ -54,7 +55,7 @@ children:[
 
   {path:'/topics', element: <div>Topics page</div>},
   {path:'/statics', element: <div>statics page</div>},
-  {path:'/blog', element: <div>blog page</div>},
+  {path:'/blog', element: <Blog></Blog>},
 
 
 
