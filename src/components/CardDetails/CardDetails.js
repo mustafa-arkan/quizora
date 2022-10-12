@@ -5,7 +5,7 @@ import Questions from '../Questions/Questions';
 const CardDetails = () => {
 const questions=useLoaderData().data.questions
 
-
+const topic=useLoaderData().data
 
 
 //console.log(questions)
@@ -13,7 +13,7 @@ const questions=useLoaderData().data.questions
 return (
 <div> 
 
-<h2>Quiz of : {questions.length}</h2>
+<h2>Quiz of : {topic.name}</h2>
 
 
 

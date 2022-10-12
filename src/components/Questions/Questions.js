@@ -3,10 +3,10 @@ import { useLoaderData } from 'react-router-dom';
 import Options from '../Options/Options';
 
 
-const Questions = ({singlequestion}) => {
-    console.log(singlequestion)
+const Questions = () => {
+    //console.log(singlequestion)
 
-const{question}=singlequestion
+
 
 
 
@@ -18,7 +18,7 @@ const options=useLoaderData().data.questions
 
         <div>
             
-<p>Question:{question}</p>
+{/* <p>Question:{question}</p> */}
 
 {
 
