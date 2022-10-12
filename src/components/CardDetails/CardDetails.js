@@ -11,7 +11,7 @@ const topic=useLoaderData().data
 //console.log(questions)
 
 return (
-<div> 
+<div className='container'> 
 
 <h2>Quiz of : {topic.name}</h2>
 

@@ -15,7 +15,7 @@ const Options = ({opt}) => {
 
 
 
-        <div className='p-5 m-2 bg-success'>
+        <div className='p-5 m-2 bg-success p-2 text-dark bg-opacity-25'>
 
 
             <p>Questions:{opt.question}</p>
