@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import './Homecard.css'
 
 
 
@@ -13,15 +13,15 @@ const {id,name,logo,total}=home
         
 
 
-<div className=' container card-group '>
+<div className=' container card-group single '>
 
 
 <div className="card   mb-3 col-md-3 bg-success p-2 text-dark bg-opacity-10 d-flex flex-row  container ">
   <div className="row g-0 ">
-    <div className="col-md-4">
+    <div className="col-md-4 col-6">
       <img src={logo} className="img-fluid rounded-start" alt="..."/>
     </div>
-    <div className="col-md-8">
+    <div className="col-md-8 ">
       <div className="card-body ">
         <h5 className="card-title">{name}</h5>
         <p>Total quiz:{total}</p>

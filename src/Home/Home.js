@@ -3,6 +3,9 @@ import { useLoaderData } from 'react-router-dom';
 import Homecard from '../components/Homecard/Homecard';
 import logo from '../Images/logo.png'
 
+
+
+
 const Home = () => {
 
     const homes = useLoaderData().data
@@ -21,7 +24,7 @@ const Home = () => {
 
             </div>
 
-           <div className='d-flex container'>
+           <div className='d-flex container  single  '>
 
            {
 
