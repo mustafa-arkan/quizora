@@ -13,7 +13,7 @@ const topic=useLoaderData().data
 return (
 <div className='container'> 
 
-<h2>Quiz of : {topic.name}</h2>
+<h2>Quiz of {topic.name}</h2>
 
 
 

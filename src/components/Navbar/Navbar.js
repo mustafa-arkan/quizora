@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
 
-<nav className="navbar navbar-expand-lg bg-light container">
+<nav className="navbar navbar-expand-lg bg-light container sticky-top">
   <div className="container-fluid">
   <h3>Quizzoraa</h3>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,9 +22,7 @@ const Navbar = () => {
         <li className="nav-item mx-auto">
         <Link className="nav-link active " to='/home'>Home</Link>
         </li>
-        <li className="nav-item">
-        <Link  className="nav-link active" to='/topics'>Topics</Link>
-        </li>
+        
         <li className="nav-item">
         <Link  className="nav-link active" to='/statics'>Statistics</Link>
         </li>

@@ -54,7 +54,7 @@ children:[
 
 
 
-  {path:'/topics', element: <div>Topics page</div>},
+  
 
 
   {path:'/statics', element: <Statistics></Statistics>},
