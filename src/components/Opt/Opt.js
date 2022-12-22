@@ -29,7 +29,7 @@ const Opt = ({opp}) => {
 
 
 
-//{/* <p>option:{opp}</p> */}
+
 
             
        
